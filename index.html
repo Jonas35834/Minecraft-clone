@@ -43,7 +43,12 @@
       border-radius: 8px;
       transition: background 0.3s ease;
     }
-    .download-btn:hover {
+    .download-btn.disabled {
+      background: #555;
+      color: #aaa;
+      cursor: not-allowed;
+    }
+    .download-btn:hover:not(.disabled) {
       background: #00cc66;
     }
     .placeholder {
@@ -77,8 +82,8 @@
     </p>
     
     <h2>Download</h2>
-    <p>Hier kannst du die aktuelle Version herunterladen und lokal spielen:</p>
-    <a href="DEIN_DOWNLOAD_LINK_HIER" class="download-btn">Spiel herunterladen</a>
+    <p>Im Moment ist das Spiel noch nicht verfügbar – bald kannst du es hier herunterladen 🎮</p>
+    <a href="#" class="download-btn disabled">Bald verfügbar</a>
 
     <div class="placeholder">
       <h2>Bald auch im Browser!</h2>
@@ -90,7 +95,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Jonas Hohl – Alle Rechte vorbehalten
+    &copy; 2025 Dein Name – Alle Rechte vorbehalten
   </footer>
 </body>
 </html>
