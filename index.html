@@ -3,99 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini-Minecraft Projekt</title>
+  <title>Meine Spiele</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #1e1e1e;
-      color: #fff;
-      text-align: center;
-    }
-    header {
-      background: #333;
-      padding: 20px;
-      border-bottom: 2px solid #00ff88;
-    }
-    header h1 {
-      margin: 0;
-      color: #00ff88;
-      font-size: 2.5rem;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-    .content {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
-      background: #00ff88;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    .download-btn.disabled {
-      background: #555;
-      color: #aaa;
-      cursor: not-allowed;
-    }
-    .download-btn:hover:not(.disabled) {
-      background: #00cc66;
-    }
-    .placeholder {
-      margin-top: 50px;
-      padding: 30px;
-      background: #2a2a2a;
-      border-radius: 10px;
-      border: 2px dashed #555;
-      color: #aaa;
-    }
-    footer {
-      margin-top: 60px;
-      padding: 15px;
-      background: #222;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
+    body { margin:0; font-family:Arial,sans-serif; background:#1e1e1e; color:#fff; text-align:center; }
+    header { background:#333; padding:20px; border-bottom:2px solid #00ff88; }
+    header h1 { margin:0; color:#00ff88; font-size:2.2rem; }
+    .games { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:40px 20px; }
+    .game-card { background:#2a2a2a; border:2px solid #444; border-radius:10px; width:280px; padding:20px; }
+    .game-card h2 { margin:10px 0; color:#00ff88; }
+    .game-card p { font-size:0.95rem; color:#ccc; }
+    .game-card a { display:inline-block; margin-top:15px; padding:12px 20px; background:#00ff88; color:#000;
+                   font-weight:bold; text-decoration:none; border-radius:8px; transition:background 0.3s ease; }
+    .game-card a:hover { background:#00cc66; }
+    footer { margin-top:40px; padding:15px; background:#222; color:#aaa; font-size:0.9rem; }
   </style>
 </head>
 <body>
   <header>
-    <h1>Mini-Minecraft</h1>
-    <p>Mein eigenes Spiel mit Python (pygame)</p>
+    <h1>Meine Spiele</h1>
+    <p>Selbst gecodet mit Python (pygame)</p>
   </header>
 
-  <div class="content">
-    <h2>Spielbeschreibung</h2>
-    <p>
-      Willkommen bei meinem kleinen Minecraft-ähnlichen Projekt!  
-      Das Spiel ist mit Python &amp; pygame programmiert und bietet Blöcke, Weltgenerierung und einfache Steuerung.
-    </p>
-    
-    <h2>Download</h2>
-    <p>Im Moment ist das Spiel noch nicht verfügbar – bald kannst du es hier herunterladen 🎮</p>
-    <a href="#" class="download-btn disabled">Bald verfügbar</a>
+  <div class="games">
+    <div class="game-card">
+      <h2>Mini-Minecraft</h2>
+      <p>Ein Minecraft-ähnliches Spiel mit Blöcken und Weltgenerierung.</p>
+      <a href="minecraft.html">Mehr erfahren</a>
+    </div>
 
-    <div class="placeholder">
-      <h2>Bald auch im Browser!</h2>
-      <p>
-        Sobald ich wieder zuhause bin, lade ich die <strong>Browser-Version</strong> hoch,  
-        damit du direkt im Web spielen kannst 🚀
-      </p>
+    <div class="game-card">
+      <h2>Snake</h2>
+      <p>Der klassische Snake-Klon – einfach, aber süchtig machend!</p>
+      <a href="snake.html">Mehr erfahren</a>
     </div>
   </div>
 
   <footer>
-    &copy; 2025 Dein Name – Alle Rechte vorbehalten
+    &copy; 2025 Jonas Hohl – Alle Rechte vorbehalten
   </footer>
 </body>
 </html>
